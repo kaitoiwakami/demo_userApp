@@ -20,6 +20,7 @@ import {
         createAppContainer 
        } from 'react-navigation';
 
+//ホーム画面コンテンツ
 class recommendedScreen extends React.Component {
 render() {
   return (
@@ -131,6 +132,7 @@ render() {
   }
 }
 
+//料理画面コンテンツ
 class foodScreen extends React.Component {
 render() {
   return (
@@ -141,6 +143,7 @@ render() {
   }
 }
 
+//飲み物画面コンテンツ
 class drinkScreen extends React.Component {
 render() {
   return (
@@ -151,6 +154,7 @@ render() {
   }
 }
 
+//ナビゲーションバー
 class AppTabNavigation extends React.Component {
 render() {
   const { navigation } = this.props;
@@ -187,6 +191,7 @@ render() {
 }
 }
 
+//ナビゲーションバースタイル
 const styles = {
   containerStyle: {
     paddingTop: 70,
@@ -220,6 +225,7 @@ const styles = {
   },
 }
 
+//ページ構造
 const RootStack = createMaterialTopTabNavigator({
   Recommended: {
     screen: recommendedScreen,
@@ -236,6 +242,7 @@ const RootStack = createMaterialTopTabNavigator({
   }
 );
 
+//コンテンツスタイル
 const design = StyleSheet.create({
   container: {
     flex: 1,
